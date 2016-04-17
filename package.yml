@@ -1,0 +1,18 @@
+name        : damageproto
+version     : 1.2.1
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/damageproto-1.2.1.tar.gz : f65ccbf1de9750a527ea6e85694085b179f2d06495cbdb742b3edb2149fef303
+license     :
+    - MIT
+summary     : Damage Extension
+component   : xorg.proto
+patterns    : /
+description : |
+    This package contains header files and documentation for the X Damage extension.  Library and server implementations are separate.
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
